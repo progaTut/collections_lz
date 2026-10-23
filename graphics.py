@@ -1,13 +1,16 @@
 import matplotlib.pyplot as plt
 import numpy as np
 x = [-5,-4,-3,-2,-1,0,1,2,3,4,5] #исходный массив значений
-y = np.square(x) #
-y1 = np.log(x) #
-y2 = np.exp(x)#
-y3 = np.power(x , 3)#
-plt.plot(x, y,'x-', color="blue")# 
-plt.plot(x, y1, "o-", color="red") #
-plt.plot(x, y2, ".-", color="green") #
-plt.plot(x, y3, "k:", color="purple") #
+y = np.square(x) #нахождения квадрата
+y1 = np.log(x) #нахождения натурального логарифма
+y2 = np.exp(x)#нахождение экспоненты
+y3 = np.power(x , 3)#нахождения куба
+plt.grid()#создаемм сетку для удобства и наглядности графиков
+plt.xlabel('Ось х')#подписываем ось X
+plt.ylabel('Ось y')#подписываем ось Y
+plt.plot(x, y,'x-', color="blue")# отрисовка графика квадрата
+plt.plot(x, y1, "o-", color="red") #отрисовка графика натурального логарифма
+plt.plot(x, y2, ".-", color="green") #отрисовка графика экспоненты
+plt.plot(x, y3, "k:", color="purple") #отрисовка графика куба
 plt.title("График")#название графиков
 plt.show()#отрисовка графиков
